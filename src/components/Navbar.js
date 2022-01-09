@@ -88,16 +88,6 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/programs"
-                onClick={() => updateExpanded(false)}
-              >
-                Resume
-              </Nav.Link>
-            </Nav.Item>
-
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/vaibhav-karnwal"

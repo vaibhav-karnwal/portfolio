@@ -19,6 +19,14 @@ function Resume() {
           <Col md={6} className="resume-left">
             <h3 className="resume-title">Experience</h3>
             <Resumecontent
+              title="Associate Software Engineer [ Altimetrik ]"
+              date="Jan 2022 - present"
+              content={[
+                "Working on the development of an Web Application with React and Next.js",
+                "Designing the User Interactive Website for the customer, using RestApi to add customer data"
+              ]}
+            />
+            <Resumecontent
               title="Flutter Developer Intern [ Ranavaj Power Solution ]"
               date="Apr 2021 - July 2021"
               content={[
@@ -43,7 +51,11 @@ function Resume() {
               date="2018 - 2021"
               content={[`CGPA: 8.0 (All Sem)`]}
             />
-
+            <Resumecontent
+              title="Mechanical Engineering [Govt. Polytechnic, Bijnor] "
+              date="2012 - 2015"
+              content={[`CGPA: 7.1 (All Sem)`]}
+            />
             <h3 className="resume-title">Ranks and Achivements</h3>
             <Resumecontent
               title=""
