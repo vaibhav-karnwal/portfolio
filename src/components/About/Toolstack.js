@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {DiAndroid} from "react-icons/di";
+import {SiVisualstudiocode} from "react-icons/si";
 
 function Toolstack() {
   return (
@@ -9,7 +10,7 @@ function Toolstack() {
       <DiAndroid/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      
+      <SiVisualstudiocode/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
    

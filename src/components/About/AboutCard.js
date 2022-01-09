@@ -8,7 +8,9 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Vaibhav Karnwal </span>
-            from <span className="purple"> Bijnor City, Uttar Pradesh, India.</span>
+            from <span className="purple"> Bijnor City, Uttar Pradesh, India. </span>
+            I born in <span className="purple"> Muzaffarnagar </span>
+            at <span className="purple"> 7:05 AM</span> on <span className="purple"> 28 December 1995.</span>
             <br />
             I am currently working as a Associate Software Engineer in Altimetrik in Bangalore which comes under 25 top companies. I have a hands-on experience of building websites and android applications.
             I have completed my Bachlor's in Computer Science & engineering from AKTU University and diploma in Mechanical Engineering.   
