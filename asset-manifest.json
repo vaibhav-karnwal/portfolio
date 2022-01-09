@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d8d9ecc3.chunk.css",
-    "main.js": "/portfolio/static/js/main.2928918e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.2928918e.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.5404d0ce.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.5404d0ce.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e997409a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.e997409a.js.map",
     "static/css/2.f2512455.chunk.css": "/portfolio/static/css/2.f2512455.chunk.css",
@@ -28,7 +28,7 @@
     "static/media/style.css": "/portfolio/static/media/vaibhav1.9dd437fc.jpg",
     "static/media/razorpay.f9ed1497.png": "/portfolio/static/media/razorpay.f9ed1497.png",
     "static/media/reskill.7b51212c.PNG": "/portfolio/static/media/reskill.7b51212c.PNG",
-    "static/media/vaibhav-karnwal_resume.a8162fcd.pdf": "/portfolio/static/media/vaibhav-karnwal_resume.a8162fcd.pdf",
+    "static/media/vaibhav-karnwal_resume.bcac558f.pdf": "/portfolio/static/media/vaibhav-karnwal_resume.bcac558f.pdf",
     "static/media/vaibhav.add82485.png": "/portfolio/static/media/vaibhav.add82485.png"
   },
   "entrypoints": [
@@ -36,6 +36,6 @@
     "static/css/2.f2512455.chunk.css",
     "static/js/2.af43a035.chunk.js",
     "static/css/main.d8d9ecc3.chunk.css",
-    "static/js/main.2928918e.chunk.js"
+    "static/js/main.5404d0ce.chunk.js"
   ]
 }
