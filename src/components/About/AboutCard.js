@@ -25,7 +25,7 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
+          <p style={{ marginBlockEnd: 0, color: "rgb(217 213 166)" }}>
             "Strive to build things that make a difference!"{" "}
           </p>
         </blockquote>

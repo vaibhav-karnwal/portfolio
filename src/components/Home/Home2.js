@@ -13,7 +13,7 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 className="text-danger" style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body text-danger">
@@ -34,7 +34,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              As a frontend developer with one year experience, I have a strong
+              As a frontend developer with one plus year experience, I have a strong
               foundation in web development technologies such as{" "}
               <i>
                 <b className="purple">HTML, CSS, JavaScript and TypeScript</b>

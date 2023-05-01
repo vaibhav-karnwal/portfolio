@@ -2,14 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 // import Particle from "../Particle";
-
 import portfolioui from "../../Assets/Projects/portfolioui.png";
-import razorpay from "../../Assets/Projects/razorpay.png";
 import fbscrape from "../../Assets/Projects/fbscrape.png";
 import faceRecognitionSystem from "../../Assets/Projects/faceRecognitionSystem.PNG";
 import store from "../../Assets/Projects/book-store.png";
 import reskill from "../../Assets/Projects/reskill.PNG";
-import chatbot1 from "../../Assets/Projects/chatbot1.png";
 import ocr from "../../Assets/Projects/OCR.png";
 import account from "../../Assets/Projects/create-account.PNG";
 import breaker from "../../Assets/Projects/brick-breaker-2.PNG";
