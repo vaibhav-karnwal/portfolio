@@ -10,7 +10,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Vaibhav Karnwal </span>
             from <span className="purple"> Bijnor City, Uttar Pradesh, India. </span>
             <br />
-            I am currently working as a Associate Software Engineer in Altimetrik in Bangalore which comes under 25 top companies. I have a hands-on experience of building websites and android applications.
+            I am currently working as a Associate Engineer in Altimetrik in Bangalore from Jan 2022. I have a hands-on experience of building websites.
             I have completed my Bachlor's in Computer Science & engineering from AKTU University and diploma in Mechanical Engineering.   
             <br />
             <br />
@@ -22,9 +22,6 @@ function AboutCard() {
             </li>
             <li className="about-activity">
              Watching Korean and Chinese Dramas
-            </li>
-            <li className="about-activity">
-             Chatting with Friends
             </li>
           </ul>
 

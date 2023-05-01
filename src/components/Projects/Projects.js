@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
+// import Particle from "../Particle";
 
 import portfolioui from "../../Assets/Projects/portfolioui.png";
 import razorpay from "../../Assets/Projects/razorpay.png";
@@ -19,7 +19,7 @@ import scrape from "../../Assets/Projects/flipcart-scrape.PNG";
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
@@ -28,15 +28,6 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={razorpay}
-              isBlog={false}
-              title="Razorpay Gateway Integration"
-              description="Razor Pay is one of the best payment gateways which provided plugin in a flutter. It was the most straightforward to integrate in-product payment widget that kicked us off with Razorpay yet it was the quick and dependable help for both issue settlement and on-boarding new highlights that have kept us cooperating with them!."
-              link="https://github.com/vaibhav-karnwal/Razorpay-Payment-Integration-in-Flutter"
-            />
-          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -128,16 +119,6 @@ function Projects() {
               title="Opti-Character-Recognition"
               description="Implement the Software in python where user can upload an image of text written in hand written format which can convert into text (.txt) file and can be used for further use."
               link="https://github.com/vaibhav-karnwal/Optical-Character-Recognition"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatbot1}
-              isBlog={false}
-              title="ChatBot"
-              description="Bulid a ChatBot in Java which is one of the most advanced and promising expressions of interaction between humans and machines.A chatbot only represents the natural evolution of a Question Answering system leveraging Natural Language Processing (NLP)."
-              link="https://github.com/vaibhav-karnwal/chatbot"
             />
           </Col>
 

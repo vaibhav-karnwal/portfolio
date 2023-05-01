@@ -26,7 +26,7 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container>
+      <Container className="justify-content-center align-items-end">
         <Navbar.Brand href="/portfolio">
                 <div className="img-fluid logo" alt="brand" href="#">its.me<span>.vaibhavkarnwal</span></div>
         </Navbar.Brand>
@@ -40,7 +40,7 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse className="flex-grow-0" id="responsive-navbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/portfolio" onClick={() => updateExpanded(false)}>
@@ -75,16 +75,6 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 Resume
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                href="https://mega.nz/folder/pJkg3SyS#wCcXEjVxtQdpGssorrvJ5g"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Study-Material
               </Nav.Link>
             </Nav.Item>
 

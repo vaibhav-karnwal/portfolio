@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/vaibhav.png";
+import myImg from "../../Assets/vaibhav.jpg";
 import Tilt from "react-parallax-tilt";
 import github from "../../Assets/github.png";
 import instagram from "../../Assets/instagram.png";
@@ -16,7 +16,7 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
+            <p className="home-about-body text-danger">
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
@@ -26,22 +26,33 @@ function Home2() {
               </i>
               <br />
               <br />
-              My field of Interest's is building new &nbsp;
+              <span>My field of Interest's is building new</span> &nbsp;
               <i>
                 <b className="purple">Web Technologies and Products </b> and
                 also in areas related to{" "}
-                <b className="purple">
-                  Mobile Application Development.
-                </b>
+                <b className="purple">Mobile Application Development.</b>
               </i>
               <br />
               <br />
+              As a frontend developer with one year experience, I have a strong
+              foundation in web development technologies such as{" "}
               <i>
-              Whenever possible, I also apply my passion in {" "}
-              <b className="purple"
-              >Photo Editing and Video Editing.
-                </b>
+                <b className="purple">HTML, CSS, JavaScript and TypeScript</b>
               </i>
+              , as well as experience with popular frontend frameworks such as
+              <i>
+                <b className="purple"> React, Redux.</b>
+              </i>{" "}
+              I have a track of record of designing and implementing
+              <i>
+                <b className="purple">
+                  {" "}
+                  user friendly and responsive interfaces
+                </b>
+              </i>{" "}
+              that meet the needs of both clients and end users. In addition to
+              my technical skills, I have strong problem solving that allows me
+              to work effectively.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -51,7 +62,7 @@ function Home2() {
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="home-about-social">
+          <Col md={12} className="home-about-social text-muted">
             <h1>FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
@@ -63,7 +74,8 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
-                  ><img src={github} className="icon-size " ></img>
+                >
+                  <img src={github} alt="" className="icon-size "></img>
                 </a>
               </li>
               <li className="social-icons">
@@ -72,7 +84,8 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
-                  ><img src={twitter} className="icon-size " ></img>
+                >
+                  <img src={twitter} alt="" className="icon-size "></img>
                 </a>
               </li>
               <li className="social-icons">
@@ -81,7 +94,8 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
-                  ><img src={linkedin} className="icon-size " ></img>
+                >
+                  <img src={linkedin} alt="" className="icon-size "></img>
                 </a>
               </li>
               <li className="social-icons">
@@ -90,7 +104,8 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
-                  ><img src={instagram} className="icon-size" ></img>
+                >
+                  <img src={instagram} alt="" className="icon-size"></img>
                 </a>
               </li>
             </ul>
