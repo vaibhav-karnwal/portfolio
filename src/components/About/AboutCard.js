@@ -7,8 +7,8 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Vaibhav Karnwal </span>
-            from <span className="purple"> Bijnor City, Uttar Pradesh, India. </span>
+            Hi Everyone, I am <span className="grey">Vaibhav Karnwal </span>
+            from <span className="grey"> Bijnor City, Uttar Pradesh, India. </span>
             <br />
             I am currently working as a Associate Engineer in Altimetrik in Bangalore from Jan 2022. I have a hands-on experience of building websites.
             I have completed my Bachlor's in Computer Science & engineering from AKTU University and diploma in Mechanical Engineering.   

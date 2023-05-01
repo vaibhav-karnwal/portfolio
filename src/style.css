@@ -290,10 +290,11 @@ html {
 .home-section {
   position: relative;
   z-index: -1;
-  min-height: 800px;
+  min-height: 1000px;
   background-image: var(--image-gradient), url(./Assets/vaibhav1.jpg);
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 100%;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
