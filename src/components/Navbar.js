@@ -26,7 +26,7 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container className="justify-content-center align-items-end">
+      <Container className="justify-content-md-center align-items-end">
         <Navbar.Brand href="/portfolio">
                 <div className="img-fluid logo" alt="brand" href="#">its.me<span>.vaibhavkarnwal</span></div>
         </Navbar.Brand>
