@@ -23,13 +23,16 @@ html {
 
   --imp-text-color: rgb(22, 146, 218);
   --imp-text-orange-color: #d8ab0f;
+  --imp-text-green-color: rgb(91 143 143);
   --imp-text-grey-color: rgb(35 54 66);
 }
 
 .purple {
   color: var(--imp-text-color) !important;
 }
-
+.green {
+  color: var(--imp-text-green-color) !important;
+}
 .orange {
   color: var(--imp-text-orange-color) !important;
 }
@@ -303,7 +306,9 @@ html {
   color: whitesmoke;
   text-align: left;
 }
-
+.home-text{
+  color: #6aa2a4;
+}
 .heading {
   font-size: 2.4em !important;
   padding-left: 45px !important;
@@ -484,6 +489,7 @@ html {
 }
 .footer-copywright {
   text-align: center !important;
+  align-self: center !important;
 }
 
 .footer-body {
@@ -606,7 +612,7 @@ html {
   box-shadow: none !important;
 }
 .project-heading {
-  color: crimson !important;
+  color: var(--imp-text-orange-color) !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;

@@ -9,7 +9,7 @@ function About() {
   return (
     <Container fluid className="about-section">
       {/* <Particle /> */}
-      <Container>
+      <Container className="text-white">
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
@@ -33,13 +33,13 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Professional <strong className="grey">Skillset </strong>
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          <strong className="grey">Tools</strong> I use
         </h1>
         <Toolstack />
       </Container>

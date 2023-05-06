@@ -2,10 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/vaibhav.jpg";
 import Tilt from "react-parallax-tilt";
-import github from "../../Assets/github.png";
-import instagram from "../../Assets/instagram.png";
-import twitter from "../../Assets/twitter.png";
-import linkedin from "../../Assets/linkedin.png";
 
 function Home2() {
   return (
@@ -14,101 +10,56 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 className="text-danger" style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME <span className="green"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body text-danger">
+            <p className="home-about-body home-text">
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
-              <br />I am good in classics like
-              <i>
-                <b className="purple"> Java. </b>
-              </i>
+              <br />
+              I'm a Front-End Developer with one plus years of experience in
+              building responsive and user-friendly web applications.
               <br />
               <br />
               <span>My field of Interest's is building new</span> &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">Mobile Application Development.</b>
+                <b className="green">Web Technologies and Products </b> and also
+                in areas related to{" "}
+                <b className="green">Mobile Application Development.</b>
               </i>
               <br />
-              <br />
-              As a frontend developer with one plus year experience, I have a strong
-              foundation in web development technologies such as{" "}
+              <br />I love creating beautiful interfaces and solving complex
+              problems through code. I have a strong foundation in web
+              development technologies such as{" "}
               <i>
-                <b className="purple">HTML, CSS, JavaScript and TypeScript</b>
+                <b className="green">
+                  HTML, CSS, SCSS, JavaScript and TypeScript
+                </b>
               </i>
               , as well as experience with popular frontend frameworks such as
               <i>
-                <b className="purple"> React, Redux.</b>
+                <b className="green"> React, Redux.</b>
               </i>{" "}
-              I have a track of record of designing and implementing
+              <br />
+              <br />I have a track of record of designing and implementing
               <i>
-                <b className="purple">
+                <b className="green">
                   {" "}
                   user friendly and responsive interfaces
                 </b>
               </i>{" "}
               that meet the needs of both clients and end users. In addition to
               my technical skills, I have strong problem solving that allows me
-              to work effectively.
+              to work effectively. I am good in classics like
+              <i>
+                <b className="green"> Java. </b>
+              </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          <Col md={4} className="myAvtar align-self-center">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} className="home-about-social text-muted">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/vaibhav-karnwal"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <img src={github} alt="" className="icon-size "></img>
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/algocreater"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <img src={twitter} alt="" className="icon-size "></img>
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/vaibhav-karnwal/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <img src={linkedin} alt="" className="icon-size "></img>
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/vaibhavkarnwal2812/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <img src={instagram} alt="" className="icon-size"></img>
-                </a>
-              </li>
-            </ul>
           </Col>
         </Row>
       </Container>

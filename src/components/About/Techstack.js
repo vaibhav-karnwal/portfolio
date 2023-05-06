@@ -1,49 +1,60 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {RiReactjsFill} from "react-icons/ri";
-import {RiFlutterFill} from "react-icons/ri";
-import {FaJava} from "react-icons/fa";
-import {DiJavascript1} from "react-icons/di";
-import {AiFillHtml5} from "react-icons/ai";
-import {FaCss3} from "react-icons/fa";
-import {DiBootstrap} from "react-icons/di";
-import {FaSass} from "react-icons/fa";
-import {AiFillGithub} from "react-icons/ai";
-import {FaNodeJs} from "react-icons/fa";
-
+import { RiReactjsFill } from "react-icons/ri";
+import { RiFlutterFill } from "react-icons/ri";
+import { FaJava } from "react-icons/fa";
+import { DiJavascript1 } from "react-icons/di";
+import { AiFillHtml5 } from "react-icons/ai";
+import { FaCss3 } from "react-icons/fa";
+import { DiBootstrap } from "react-icons/di";
+import { FaSass } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+import { FaNodeJs } from "react-icons/fa";
+import { TbBrandRedux } from "react-icons/tb";
+import { SiJest, SiTypescript } from "react-icons/si";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <RiReactjsFill/>
+        <RiReactjsFill />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <RiFlutterFill/>
+        <TbBrandRedux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaJava/>
+        <SiTypescript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1/>
+        <SiJest />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <AiFillHtml5/>
+        <FaJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaNodeJs/>
+        <DiJavascript1 />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <AiFillHtml5 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaSass/>
+        <FaNodeJs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiBootstrap/>
+        <FaSass />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <AiFillGithub/>
+        <DiBootstrap />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaCss3/>
+        <AiFillGithub />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaCss3 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <RiFlutterFill />
       </Col>
     </Row>
   );
