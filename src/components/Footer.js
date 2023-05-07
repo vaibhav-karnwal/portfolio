@@ -4,20 +4,23 @@ import github from "../Assets/github.png";
 import instagram from "../Assets/instagram.png";
 import twitter from "../Assets/twitter.png";
 import linkedin from "../Assets/linkedin.png";
+import { useLocation } from "react-router";
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+  const location = useLocation();
   return (
     <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Vaibhav Karnwal</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} itsmevaibhavkarnwal</h3>
-        </Col>
-        <Col md="4" className="footer-body">
+      {location.pathname !== "/portfolio" && (
+        <Row>
+          <Col md="4" className="footer-copywright">
+            <h3>Designed and Developed by Vaibhav Karnwal</h3>
+          </Col>
+          <Col md="4" className="footer-copywright">
+            <h3>Copyright © {year} itsmevaibhavkarnwal</h3>
+          </Col>
+          <Col md="4" className="footer-body">
             <ul className="footer-icons">
               <li className="social-icons">
                 <a
@@ -26,7 +29,8 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="icon-colour  home-social-icons"
-                  ><img src={github} className="icon-size " alt="social"></img>
+                >
+                  <img src={github} className="icon-size " alt="social"></img>
                 </a>
               </li>
               <li className="social-icons">
@@ -36,7 +40,8 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="icon-colour  home-social-icons"
-                  ><img src={twitter} className="icon-size " alt="social"></img>
+                >
+                  <img src={twitter} className="icon-size " alt="social"></img>
                 </a>
               </li>
               <li className="social-icons">
@@ -46,7 +51,8 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="icon-colour  home-social-icons"
-                  ><img src={linkedin} className="icon-size " alt="social"></img>
+                >
+                  <img src={linkedin} className="icon-size " alt="social"></img>
                 </a>
               </li>
               <li className="social-icons">
@@ -56,12 +62,14 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="icon-colour home-social-icons"
-                  ><img src={instagram} className="icon-size" alt="social"></img>
+                >
+                  <img src={instagram} className="icon-size" alt="social"></img>
                 </a>
               </li>
             </ul>
-        </Col>
-      </Row>
+          </Col>
+        </Row>
+      )}
     </Container>
   );
 }

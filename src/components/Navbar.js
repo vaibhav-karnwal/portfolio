@@ -26,9 +26,9 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container className="justify-content-md-center align-items-end">
+      <Container className="justify-content-md-between align-items-end">
         <Navbar.Brand href="/portfolio">
-                <div className="img-fluid logo" alt="brand" href="#">its.me<span>.vaibhavkarnwal</span></div>
+                <div className="img-fluid secondary logo" alt="brand" href="#">its.me<span>.vaibhavkarnwal</span></div>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

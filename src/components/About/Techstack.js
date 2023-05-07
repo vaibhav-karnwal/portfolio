@@ -14,48 +14,32 @@ import { TbBrandRedux } from "react-icons/tb";
 import { SiJest, SiTypescript } from "react-icons/si";
 
 function Techstack() {
+  const icons = [
+    RiReactjsFill,
+    TbBrandRedux,
+    SiTypescript,
+    SiJest,
+    FaJava,
+    DiJavascript1,
+    AiFillHtml5,
+    FaNodeJs,
+    FaSass,
+    DiBootstrap,
+    AiFillGithub,
+    FaCss3,
+    RiFlutterFill,
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <RiReactjsFill />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandRedux />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTypescript />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiJest />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaJava />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <AiFillHtml5 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaNodeJs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaSass />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiBootstrap />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <AiFillGithub />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaCss3 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <RiFlutterFill />
-      </Col>
+      {icons.map((icon) => {
+        let Icon = icon;
+        return (
+          <Col xs={4} md={2} onClick={()=>{}} className="tech-icons">
+              <Icon />
+          </Col>
+        );
+      })}
     </Row>
   );
 }

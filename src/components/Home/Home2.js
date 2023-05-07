@@ -1,9 +1,20 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import myImg from "../../Assets/vaibhav.jpg";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
+  const offerings = [
+    {
+      title: "Fast Delivery",
+      description: "I will deliver your product as soon as possible 🚀.",
+    },
+    {
+      title: "Clean Code",
+      description:
+        "I Create a clean code that is easy to read and mintaneble 🧹.",
+    },
+  ];
   return (
     <Container className="home-about-section" fluid id="about">
       <Container>
@@ -17,43 +28,26 @@ function Home2() {
               something, I think… 🤷‍♂️
               <br />
               <br />
-              I'm a Front-End Developer with one plus years of experience in
-              building responsive and user-friendly web applications.
+              <span>
+                I'm a Front-End Developer with one plus years of experience
+                based in Bangalore who is passionate about delivering value to
+                businesses through technology. I love the challenge of finding
+                creative solutions to problems that allows me to work
+                effectively and I enjoy collaborating with teams to achieve
+                great results.
+                <br />
+                <br />
+                I am dedicated to keeping up-to-date with the latest
+                technologies and trends to provide the best solutions for my
+                clients.
+                <br />
+                <br />I pay great attention to detail in the design and
+                development of my projects. My ultimate goal is to create
+                software that is both user-friendly and impactful in achieving
+                the client's objectives.
+              </span>
               <br />
               <br />
-              <span>My field of Interest's is building new</span> &nbsp;
-              <i>
-                <b className="green">Web Technologies and Products </b> and also
-                in areas related to{" "}
-                <b className="green">Mobile Application Development.</b>
-              </i>
-              <br />
-              <br />I love creating beautiful interfaces and solving complex
-              problems through code. I have a strong foundation in web
-              development technologies such as{" "}
-              <i>
-                <b className="green">
-                  HTML, CSS, SCSS, JavaScript and TypeScript
-                </b>
-              </i>
-              , as well as experience with popular frontend frameworks such as
-              <i>
-                <b className="green"> React, Redux.</b>
-              </i>{" "}
-              <br />
-              <br />I have a track of record of designing and implementing
-              <i>
-                <b className="green">
-                  {" "}
-                  user friendly and responsive interfaces
-                </b>
-              </i>{" "}
-              that meet the needs of both clients and end users. In addition to
-              my technical skills, I have strong problem solving that allows me
-              to work effectively. I am good in classics like
-              <i>
-                <b className="green"> Java. </b>
-              </i>
             </p>
           </Col>
           <Col md={4} className="myAvtar align-self-center">
@@ -61,6 +55,28 @@ function Home2() {
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
+        </Row>
+        <Row
+          className={"py-5"}
+          style={{ justifyContent: "center", paddingBottom: "50px" }}
+        >
+          <h1 className="text-danger" style={{ fontSize: "2.6em" }}>
+            What I <span className="green"> Offering </span>
+          </h1>
+          {offerings.map((offering) => {
+            return (
+              <Card className="project-card-view col box8 m-4">
+                <Col md={4} className="project-card w-100 grey">
+                  <Card.Title>{offering.title}</Card.Title>
+                  <Card.Text
+                    style={{ textAlign: "justify;", fontSize: "1rem;" }}
+                  >
+                    {offering.description}
+                  </Card.Text>
+                </Col>
+              </Card>
+            );
+          })}
         </Row>
       </Container>
     </Container>

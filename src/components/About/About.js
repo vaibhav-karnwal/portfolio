@@ -27,7 +27,7 @@ function About() {
           <Col
             md={4}
             style={{ paddingTop: "10px", paddingBottom: "50px" }}
-            className="about-img"
+            className="about-img align-self-center"
           >
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>

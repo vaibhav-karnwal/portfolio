@@ -14,7 +14,6 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const App: FC = () => {
   const [load, upadateLoad] = useState(true);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
