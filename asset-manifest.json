@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e6be9489.css",
-    "main.js": "/portfolio/static/js/main.96e5e3fb.js",
+    "main.css": "/portfolio/static/css/main.5eb06b42.css",
+    "main.js": "/portfolio/static/js/main.bc48e59a.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/flipcart-scrape.PNG": "/portfolio/static/media/flipcart-scrape.93513520a83149eb5503.PNG",
     "static/media/vaibhav.jpg": "/portfolio/static/media/vaibhav.2a18e2f688f26ec7cb87.jpg",
@@ -22,12 +22,12 @@
     "static/media/dancing-script-vietnamese-400-normal.woff2": "/portfolio/static/media/dancing-script-vietnamese-400-normal.508eb88407ccebae7414.woff2",
     "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/portfolio/index.html",
-    "main.e6be9489.css.map": "/portfolio/static/css/main.e6be9489.css.map",
-    "main.96e5e3fb.js.map": "/portfolio/static/js/main.96e5e3fb.js.map",
+    "main.5eb06b42.css.map": "/portfolio/static/css/main.5eb06b42.css.map",
+    "main.bc48e59a.js.map": "/portfolio/static/js/main.bc48e59a.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6be9489.css",
-    "static/js/main.96e5e3fb.js"
+    "static/css/main.5eb06b42.css",
+    "static/js/main.bc48e59a.js"
   ]
 }
