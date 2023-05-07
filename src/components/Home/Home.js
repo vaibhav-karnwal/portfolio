@@ -7,7 +7,6 @@ import Github from "../../Assets/github.png";
 import instagram from "../../Assets/instagram.png";
 import twitter from "../../Assets/twitter.png";
 import linkedin from "../../Assets/linkedin.png";
-import { DiJavascript1 } from "react-icons/di";
 
 function Home() {
   const socialLinks = [
@@ -48,7 +47,7 @@ function Home() {
               <h1 className="heading-name">
                 <strong className="main-name"> VAIBHAV KARNWAL</strong>
               </h1>
-              
+
               <h1
                 className="heading-name secondary w-75"
                 style={{ fontSize: "2rem" }}
@@ -56,37 +55,32 @@ function Home() {
                 <span className="text-white">Software Engineer.</span> A
                 self-taught developer with an interest in Computer Science.
               </h1>
-              
-              <Row>
-                <Col style={{ paddingLeft: "45px" }}>
-                  <ul className="footer-icons">
-                    {socialLinks.map((socialLink) => {
-                      return (
-                        <li className="social-icons">
-                          <a
-                            href={socialLink.href}
-                            style={{ color: "lightGreen" }}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="icon-colour d-flex align-self-center lightGreen flex-row h4"
-                          >
-                            <img
-                              src={socialLink.src}
-                              className="p-0 m-0 d-flex"
-                              style={{ width: "30px" }}
-                              alt="social"
-                            ></img>
-                            <span className="px-2">{socialLink.title}</span>
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </Col>
-              </Row>
+
+              <Col className="heading-profile pt-2">
+                <ul className="footer-icons d-flex flex-row">
+                  {socialLinks.map((socialLink) => {
+                    return (
+                        <a
+                          href={socialLink.href}
+                          style={{ color: "lightGreen" }}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="icon-colour d-flex align-self-center lightGreen flex-row"
+                        >
+                          <img
+                            src={socialLink.src}
+                            className="mx-2 d-flex"
+                            style={{ width: "30px" }}
+                            alt="social"
+                          ></img>
+                          <span className="d-none d-md-flex h4 px-2">{socialLink.title}</span>
+                        </a>
+                    );
+                  })}
+                </ul>
+              </Col>
               <div
-                className="heading-profile"
-                style={{ paddingTop: 50, textAlign: "left" }}
+                className="heading-profile text-align-start py-md-5 py-sm-4 pb-0"
               >
                 <Type />
               </div>

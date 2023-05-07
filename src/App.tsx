@@ -8,12 +8,13 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import "./style.css";
 import ScrollToTop from "./components/ScrollToTop";
 
 const App: FC = () => {
   const [load, upadateLoad] = useState(true);
+  const location = useLocation();
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
@@ -23,7 +24,7 @@ const App: FC = () => {
   }, []);
 
   return (
-    <Router>
+    <>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
@@ -34,9 +35,9 @@ const App: FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
-        <Footer />
+        {location.pathname !== "/portfolio" && <Footer />}
       </div>
-    </Router>
+    </>
   );
 };
 

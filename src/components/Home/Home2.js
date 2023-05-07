@@ -19,7 +19,7 @@ function Home2() {
     <Container className="home-about-section" fluid id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          <Col md={7} className="home-about-description">
             <h1 className="text-danger" style={{ fontSize: "2.6em" }}>
               LET ME <span className="green"> INTRODUCE </span> MYSELF
             </h1>
@@ -50,14 +50,14 @@ function Home2() {
               <br />
             </p>
           </Col>
-          <Col md={4} className="myAvtar align-self-center">
+          <Col md={5} className="myAvtar align-self-center">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
         <Row
-          className={"py-5"}
+          className={"py-5 d-flex offering"}
           style={{ justifyContent: "center", paddingBottom: "50px" }}
         >
           <h1 className="text-danger" style={{ fontSize: "2.6em" }}>
@@ -65,8 +65,8 @@ function Home2() {
           </h1>
           {offerings.map((offering) => {
             return (
-              <Card className="project-card-view col box8 m-4">
-                <Col md={4} className="project-card w-100 grey">
+              <Card className="project-card-view col box8 m-md-4 m-2">
+                <Col md={4} className="home-card w-100 grey">
                   <Card.Title>{offering.title}</Card.Title>
                   <Card.Text
                     style={{ textAlign: "justify;", fontSize: "1rem;" }}

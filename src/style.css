@@ -28,8 +28,28 @@ html {
   --imp-text-grey-color: rgb(35 54 66);
   --chakra-colors-button1: #3ccf91;
   --chakra-colors-textSecondary: #8f9094;
-}
 
+  /* Extra small screen */
+  --screen-xs-min: 576px;
+
+  /* Small screen / tablet */
+  --screen-sm-min: 400px;
+
+  /* Medium screen / desktop */
+  --screen-md-min: 786px;
+
+  /* Large screen / wide desktop */
+  --screen-lg-min: 1200px;
+
+  /* /Extra large screen */
+  --screen-xl-min: 1400px;
+  --font-size-h1: 18px;
+  --font-size-h2: 18px;
+  --font-size-h3: 16px;
+  --font-size-h4: 16px;
+  --font-size-h5: 14px;
+  --font-size-h6: 14px;
+}
 .purple {
   color: var(--imp-text-color) !important;
 }
@@ -49,6 +69,68 @@ html {
   color: var(--chakra-colors-textSecondary) !important;
 }
 
+@media (min-width: var(--screen-sm-min)) {
+  .h1-sm {
+    font-size: var(--font-size-h1);
+  }
+  .h2-sm {
+    font-size: var(--font-size-h2);
+  }
+  .h3-sm {
+    font-size: var(--font-size-h3);
+  }
+  .h4-sm {
+    font-size: var(--font-size-h4);
+  }
+  .h5-sm {
+    font-size: var(--font-size-h5);
+  }
+  .h6-sm {
+    font-size: var(--font-size-h6);
+  }
+}
+
+@media (min-width: var(--screen-md-min)) {
+  .h1-md {
+    font-size: var(--font-size-h1);
+  }
+  .h2-md {
+    font-size: var(--font-size-h2);
+  }
+  .h3-md {
+    font-size: var(--font-size-h3);
+  }
+  .h4-md {
+    font-size: var(--font-size-h4);
+  }
+  .h5-md {
+    font-size: var(--font-size-h5);
+  }
+  .h6-md {
+    font-size: var(--font-size-h6);
+  }
+}
+
+@media (min-width: var(--screen-lg-min)) {
+  .h1-lg {
+    font-size: var(--font-size-h1);
+  }
+  .h2-lg {
+    font-size: var(--font-size-h2);
+  }
+  .h3-lg {
+    font-size: var(--font-size-h3);
+  }
+  .h4-lg {
+    font-size: var(--font-size-h4);
+  }
+  .h5-lg {
+    font-size: var(--font-size-h5);
+  }
+  .h6-lg {
+    font-size: var(--font-size-h6);
+  }
+}
 /* --------- */
 /*  Preloader */
 /* --------- */
@@ -185,7 +267,8 @@ html {
   color: rgb(250, 250, 250) !important;
 }
 
-.logo {font-family: 'Dancing Script', cursive;
+.logo {
+  font-family: "Dancing Script", cursive;
   color: rgb(22, 146, 218);
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
   font-size: 35px !important;
@@ -200,6 +283,11 @@ html {
 @media (max-width: 767px) {
   .logo {
     font-size: 18px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .logo {
+    font-size: 25px !important;
   }
 }
 
@@ -300,8 +388,8 @@ html {
 
 .home-section {
   position: relative;
-  z-index: -1;
-  min-height: 1000px;
+  z-index: 2;
+  min-height: 950px;
   /* background-image: var(--image-gradient), url(./Assets/vaibhav1.jpg); */
   /* background-position: top center; */
   /* background-repeat: no-repeat; */
@@ -310,7 +398,6 @@ html {
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
-
 .home-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
@@ -351,13 +438,27 @@ html {
   color: crimson !important;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
-
+.home-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
 .chat-button {
   background-color: crimson;
 }
-@media (max-width: 767px) {
+@media (min-width: 786px) and (max-width: 1200px) {
+  .main-name {
+    font-size: 4rem !important;
+  }
+}
+@media (max-width: 400px) {
+  .offering {
+    flex-direction: column !important;
+  }
   .home-section {
-    min-height: 600px;
+    min-height: 900px !important;
     background-size: cover;
     padding-top: 30px !important;
   }
@@ -365,21 +466,54 @@ html {
     font-size: 1.4em !important;
     padding-left: 5px !important;
   }
-
   .heading-name {
-    font-size: 1.4em !important;
+    font-size: 1.8em !important;
     padding-left: 5px !important;
   }
   .heading-profile {
     padding-left: 5px !important;
   }
-
   .main-name {
-    color: rgb(22, 146, 218);
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+  .home-card {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    height: auto !important;
   }
   .Typewriter__wrapper {
-    font-size: 2.2em !important;
+    font-size: 1.8em !important;
+    font-weight: 500 !important;
+    position: absolute !important;
+  }
+  .Typewriter__cursor {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) and (min-width: 400px) {
+  .home-section {
+    min-height: 800px !important;
+    background-size: cover;
+    padding-top: 30px !important;
+  }
+  .heading {
+    font-size: 1.4em !important;
+    padding-left: 5px !important;
+  }
+  .heading-name {
+    font-size: 1.5em !important;
+    padding-left: 5px !important;
+  }
+  .heading-profile {
+    padding-left: 5px !important;
+  }
+  .main-name {
+    font-size: 2.3rem;
+  }
+  .Typewriter__wrapper {
+    font-size: 2em !important;
     font-weight: 500 !important;
     position: absolute !important;
   }
@@ -489,10 +623,11 @@ html {
   width: 20px !important;
   height: 20px !important;
 }
-.maskColor{
+.maskColor {
   background-color: orange; /* defines the background color of the image */
   mask: url(https://svgsilh.com/svg/26432.svg) no-repeat center / contain;
-  -webkit-mask: url(https://svgsilh.com/svg/26432.svg) no-repeat center / contain;
+  -webkit-mask: url(https://svgsilh.com/svg/26432.svg) no-repeat center /
+    contain;
   width: 200px;
   -webkit-filter: invert(0.1);
 }
