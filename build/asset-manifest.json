@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.5eb06b42.css",
+    "main.js": "/portfolio/static/js/main.fb520991.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/vaibhav3.jpg": "/portfolio/static/media/vaibhav3.5ba4507e4c6e6bc72b5b.jpg",
+    "static/media/flipcart-scrape.PNG": "/portfolio/static/media/flipcart-scrape.93513520a83149eb5503.PNG",
+    "static/media/vaibhav.jpg": "/portfolio/static/media/vaibhav.2a18e2f688f26ec7cb87.jpg",
+    "static/media/portfolioui.png": "/portfolio/static/media/portfolioui.7e7d2b1b97fc140afade.png",
+    "static/media/book-store.png": "/portfolio/static/media/book-store.07ebd5bb312972441692.png",
+    "static/media/new_portfolio.PNG": "/portfolio/static/media/new_portfolio.8522a611a84a326ecb79.PNG",
+    "static/media/faceRecognitionSystem.PNG": "/portfolio/static/media/faceRecognitionSystem.336de27db66e03e2d7d3.PNG",
+    "static/media/reskill.PNG": "/portfolio/static/media/reskill.7b51212c7be70a1a4909.PNG",
+    "static/media/OCR.png": "/portfolio/static/media/OCR.cebd0199033dea2dcb5e.png",
+    "static/media/fbscrape.png": "/portfolio/static/media/fbscrape.a17c0f5fa6ba7a8247ed.png",
+    "static/media/vaibhav-karnwal_resume.pdf": "/portfolio/static/media/vaibhav-karnwal_resume.519d652f265a61c19f24.pdf",
+    "static/media/dancing-script-all-400-normal.woff": "/portfolio/static/media/dancing-script-all-400-normal.00c538802507d01074bd.woff",
+    "static/media/create-account.PNG": "/portfolio/static/media/create-account.048566abfe74d0517e0e.PNG",
+    "static/media/dancing-script-latin-400-normal.woff2": "/portfolio/static/media/dancing-script-latin-400-normal.26d3e7a5932e68dd7531.woff2",
+    "static/media/brick-breaker-2.PNG": "/portfolio/static/media/brick-breaker-2.b1dd95c84fb36d05b5e1.PNG",
+    "static/media/github.png": "/portfolio/static/media/github.e39007c952ae70411304.png",
+    "static/media/dancing-script-latin-ext-400-normal.woff2": "/portfolio/static/media/dancing-script-latin-ext-400-normal.84a3b34784d28d132f1f.woff2",
+    "static/media/dancing-script-vietnamese-400-normal.woff2": "/portfolio/static/media/dancing-script-vietnamese-400-normal.508eb88407ccebae7414.woff2",
+    "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/portfolio/index.html",
+    "main.5eb06b42.css.map": "/portfolio/static/css/main.5eb06b42.css.map",
+    "main.fb520991.js.map": "/portfolio/static/js/main.fb520991.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5eb06b42.css",
+    "static/js/main.fb520991.js"
+  ]
+}
