@@ -65,7 +65,7 @@ function Home2() {
           </h1>
           {offerings.map((offering) => {
             return (
-              <Card className="project-card-view col box8 m-md-4 m-2">
+              <Card className="project-card-view col box8 m-md-4 mt-2">
                 <Col md={4} className="home-card w-100 grey">
                   <Card.Title>{offering.title}</Card.Title>
                   <Card.Text

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/vaibhav.jpg";
+import laptopImg from "../../Assets/vaibhav3.jpg";
 import Toolstack from "./Toolstack";
 
 function About() {
@@ -15,7 +15,6 @@ function About() {
             md={7}
             style={{
               justifyContent: "center",
-              paddingTop: "30px",
               paddingBottom: "50px",
             }}
           >
