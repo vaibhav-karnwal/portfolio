@@ -60,6 +60,7 @@ function Resume() {
             <h3 className="resume-title">Ranks and Achivements</h3>
             <Resumecontent
               title=""
+              imgUrl={['https://udemy-certificate.s3.amazonaws.com/image/UC-a5946f5b-e553-4320-be99-6ef60dd167eb.jpg?v=1686691348000','https://udemy-certificate.s3.amazonaws.com/image/UC-d691ff8c-17e2-4edd-affb-5580f08d262f.jpg?v=1686772357000']}
               content={[
                 "Achieved the Certificate of Complete Guide of Flutter & Dart from Udemy",
                 "HackerRank Java Certificate.",

@@ -1,4 +1,5 @@
 import React from "react";
+import laptopImg from "../../Assets/vaibhav3.jpg";
 
 function ResumeContent(props) {
   return (
@@ -9,6 +10,11 @@ function ResumeContent(props) {
       <p>
         <em>{props.date}</em>
       </p>
+
+      {props?.imgUrl?.length > 0 && props.imgUrl.map((img, index) => (
+        <>
+          <img src={img} alt="" className="col-6 p-2 img-fluid" />
+        </>))}
       <ul>
         {props.content.map((value, index) => (
           <li key={index}> ‣ {value}</li>
