@@ -22,16 +22,14 @@ function Resume() {
               title="Associate Software Engineer [ Altimetrik ]"
               date="Jan 2022 - present"
               content={[
-                "Working on the development of an Web Application with React and Next.js",
-                "Designing the User Interactive Website for the customer, using RestApi to add customer data",
-                "Worked on Building number of landing pages and website modules by creating reusable and responsive components.",
-                "Enforcing proper use of Typescript and integrating a common design system coupled with bootstrap.",
-                "Integrated the RestAPI into the UI and Standardized all output with a new, responsive, mobile-first approach and strategy.",
-                "Created Unit test cases using Jest and React testing library for more than 10 modules in react with a minimum coverage of 60 percent.",
-                "Involved in understanding and analysing the application requirements.",
-                "Work closely with all developers to ensure the integrity of the UI and Server throughout the development lifecycle.",
-                "Technical Stack learnt: React.Js, Nest.Js, Bootstrap, Typescript, JavaScript, JEST, HTML5, CSS, SCSS, GraphQL., GIT, SonarQube, Redux, RestAPI, Gitlab.",
-                "Soft Skill learnt: Teamwork, Time Management, Communication, Presentation skills.",
+                "We have developed a new web experience for Putnam ShareHolders with easier Navigation ,Interactive Charts , Enhanced investment performance Data and many more Features.",
+                "Identified web-based user interactions and developed highly-responsive user interface components via React concepts.",
+                "Worked in using React JS components, Forms, Events, Keys, Router, React Hooks, Redux concept.",
+                "It is a web application in which we worked onTechnologies like: React JS, Node, Redux ,Bootstrap, CSS, Scss, Json.",
+                "Translated designs & wireframes into high-quality code and wrote application interface code via JavaScript following React.js workflows.",
+                "I have worked in implementing GraphQL and Rest API in Node project.",
+                "Troubleshot interface software and debugged application codes to improve functionality and performance by 50%.",
+                "Developed and implemented front-end architecture to support user interface concepts with 100% accuracy.",
               ]}
             />
             <Resumecontent
@@ -60,7 +58,10 @@ function Resume() {
             <h3 className="resume-title">Ranks and Achivements</h3>
             <Resumecontent
               title=""
-              imgUrl={['https://udemy-certificate.s3.amazonaws.com/image/UC-a5946f5b-e553-4320-be99-6ef60dd167eb.jpg?v=1686691348000','https://udemy-certificate.s3.amazonaws.com/image/UC-d691ff8c-17e2-4edd-affb-5580f08d262f.jpg?v=1686772357000']}
+              imgUrl={[
+                "https://udemy-certificate.s3.amazonaws.com/image/UC-a5946f5b-e553-4320-be99-6ef60dd167eb.jpg?v=1686691348000",
+                "https://udemy-certificate.s3.amazonaws.com/image/UC-d691ff8c-17e2-4edd-affb-5580f08d262f.jpg?v=1686772357000",
+              ]}
               content={[
                 "Achieved the Certificate of Complete Guide of Flutter & Dart from Udemy",
                 "HackerRank Java Certificate.",

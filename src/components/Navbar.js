@@ -43,13 +43,13 @@ function NavBar() {
         <Navbar.Collapse className="flex-grow-0" id="responsive-navbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/portfolio" onClick={() => updateExpanded(false)}>
+              <Nav.Link className="text-shadow-dark" as={Link} to="/portfolio" onClick={() => updateExpanded(false)}>
                  Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
+              <Nav.Link className="text-shadow-dark"
                 as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
@@ -59,7 +59,7 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
+              <Nav.Link className="text-shadow-dark"
                 as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
@@ -69,7 +69,7 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
+              <Nav.Link className="text-shadow-dark"
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}

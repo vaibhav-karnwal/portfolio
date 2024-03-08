@@ -6,45 +6,30 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="grey">Vaibhav Karnwal </span> I
-            am full-stack developer with a passion for building exceptional web
-            applications. I was born in Bijnor City, Uttar Pradesh, India on
-            December 28, 1995. I am currently 28 years and 4 months old today.
+          <p
+          className="text-shadow-dark"
+            style={{
+              textAlign: "justify",
+              fontFamily: "Roboto, sans-serif",
+            }}
+          >
+            Hi Everyone, I am a Software Developer at Altimetrik India placed at
+            Bangaluru, India. I enjoy problem-solving and coding. Always strive
+            to bring 100% to the work I do. I have worked on technologies like{" "}
+            <i className="grey">
+              Java, HTML, CSS, SCSS, JavaScript and TypeScript
+            </i>
+            {" "} as well as experience with popular frontend frameworks such as
+            <i className="grey"> React, Redux</i> during my professional
+            Journey. I have 26 months of professional work experience which
+            helped me strengthen my experience in TypeScript, React, Redux. I am
+            passionate about developing complex and exceptional web applications
+            that solve real-world problems impacting millions of users.
             <br />
-            <br />
-            I am currently working as a Associate Engineer in Altimetrik in
-            Bangalore from Jan 2022. I am working as a Full Stack developer for
-            the client. I have a hands-on experience of building websites. I
-            have completed my Bachlor's in Computer Science & engineering from
-            AKTU University and diploma in Mechanical Engineering.
-            <br />
-            <br />
-            At a age of 26 in 2020, I became fascinated with the world of web
-            development. However, I have no idea where to start. It wasn't until
-            I met a friend.
-            <br />
-            In 2020, I created one website and soon discovered its limitations.
-            Determined to expand his knowledge and capabilities, I began to
-            explore the depths of web development using languages such as HTML,
-            CSS, JavaScript, and others. <br />
-            <br />
-            Now I have a strong foundation in web development technologies such
-            as{" "}
-            <i className="grey">HTML, CSS, SCSS, JavaScript and TypeScript</i>,
-            as well as experience with popular frontend frameworks such as
-            <i className="grey"> React, Redux.</i> With my dedication and hard
-            work, I honed my skills and became a self-taught full-stack
-            developer. Today, I have an impressive portfolio of work that
-            showcases my expertise in building dynamic, responsive, and
-            visually appealing web applications. <br />
-            <br />
-            In addition to my technical abilities, I have a keen eye for
-            design and aesthetics, which allows him to create stunning and
-            functional user interfaces. I am always learning and staying
-            up-to-date with the latest trends and technologies in the
-            ever-evolving field of web development.
-            <br />
+            Looking for an opportunity to work in a challenging position
+            combining my skills in Software Engineering, which provides
+            professional development, interesting experiences and personal
+            growth.
             <br />
             Apart from coding, some other activities that I love to do!
           </p>

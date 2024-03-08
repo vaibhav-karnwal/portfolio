@@ -163,7 +163,19 @@ html {
 ::-webkit-scrollbar {
   width: 7px;
 }
-
+.icon-btn {
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 70px;
+  border-radius: 45px;
+  display: inline-block;
+  margin: 4px;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   background: #000000;
@@ -542,7 +554,12 @@ html {
     padding-top: 0 !important;
   }
 }
-
+.text-shadow-dark {
+  text-shadow: 1px 1px #000;
+}
+.text-shadow-light {
+  text-shadow: 1px 1px #ffffff;
+}
 .home-about-description {
   color: white !important;
   padding-top: 100px !important;

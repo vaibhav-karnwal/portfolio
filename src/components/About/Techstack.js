@@ -36,7 +36,7 @@ function Techstack() {
         let Icon = icon;
         return (
           <Col xs={4} md={2} onClick={()=>{}} className="tech-icons">
-              <Icon />
+              <Icon/>
           </Col>
         );
       })}

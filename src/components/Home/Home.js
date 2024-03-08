@@ -7,6 +7,7 @@ import Github from "../../Assets/github.png";
 import instagram from "../../Assets/instagram.png";
 import twitter from "../../Assets/twitter.png";
 import linkedin from "../../Assets/linkedin.png";
+import qrCode from "../../Assets/qrCode.jpg";
 
 function Home() {
   const socialLinks = [
@@ -49,39 +50,47 @@ function Home() {
               </h1>
 
               <h1
-                className="heading-name secondary w-75"
+                className="heading-name secondary d-flex row w-100"
                 style={{ fontSize: "2rem" }}
               >
-                <span className="text-white">Software Engineer.</span> A
-                self-taught developer with an interest in Computer Science.
+                <span className="w-75">
+                  <span className="text-white">Software Engineer.</span> A
+                  self-taught developer with an interest in Computer Science.
+                </span>
+                <img
+                  src={qrCode}
+                  className="mx-2 justify-content-end"
+                  style={{ width: "120px" }}
+                  alt="social"
+                ></img>
               </h1>
 
               <Col className="heading-profile pt-2">
                 <ul className="footer-icons d-flex flex-row">
                   {socialLinks.map((socialLink) => {
                     return (
-                        <a
-                          href={socialLink.href}
-                          style={{ color: "lightGreen" }}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="icon-colour d-flex align-self-center lightGreen flex-row"
-                        >
+                      <a
+                        href={socialLink.href}
+                        style={{ color: "lightGreen" }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="icon-colour d-flex align-self-center lightGreen flex-row"
+                      >
+                        {" "}
+                        <button class="icon-btn justify-content-center d-flex align-items-center">
                           <img
                             src={socialLink.src}
-                            className="mx-2 d-flex"
+                            className="d-flex"
                             style={{ width: "30px" }}
                             alt="social"
                           ></img>
-                          <span className="d-none d-md-flex h4 px-2">{socialLink.title}</span>
-                        </a>
+                        </button>
+                      </a>
                     );
                   })}
                 </ul>
               </Col>
-              <div
-                className="heading-profile text-align-start py-md-5 py-sm-4 pb-0"
-              >
+              <div className="heading-profile text-align-start py-md-5 py-sm-4 pb-0">
                 <Type />
               </div>
             </Col>
