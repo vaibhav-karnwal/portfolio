@@ -37,12 +37,33 @@ function Home() {
               >
                 <span className="w-75">
                   <span className="text-white">
-                    {globalData.globeData.profession}.
+                    {globalData.globeData.profession} -
                   </span>
                   {globalData.globeData.nameDescription}
                 </span>
               </h1>
-
+              <Row className="heading-name" style={{ fontSize: "2rem" }}>
+                <Col
+                  className="text-white"
+                  style={{
+                    background: "teal",
+                    whiteSpace: "nowrap",
+                    maxWidth: "max-content",
+                  }}
+                >
+                  {"3 year Experience"}
+                </Col>
+                <Col
+                  className="text-white"
+                  style={{
+                    background: "cadetblue",
+                    whiteSpace: "nowrap",
+                    maxWidth: "max-content",
+                  }}
+                >
+                  {"2 Month Notice Period"}
+                </Col>
+              </Row>
               <Col className="heading-profile pt-2">
                 <ul className="footer-icons d-flex align-items-center flex-row">
                   {globalData.globeData.social.map((socialLink, index) => {
@@ -87,51 +108,52 @@ function Home() {
 
       <Container className="position-relative py-5" fluid id="about">
         <Container>
-          <Row className="align-items-center">
-            <Col className={"col-12 col-md-6"}>
-              <h1 className="project-heading">
-                My Recent <strong className="purple">Works </strong>
-              </h1>
-              <p className="text-success">
-                Here are a few projects I've worked on recently.
-              </p>
-            </Col>
-            <Col
-              className={"w-100"}
-              style={{ justifyContent: "center", paddingBottom: "10px" }}
-            >
-              <Col md={12} className="shadow-sm border-0">
-                <Card className="">
-                  <Card.Body>
-                    <Row className="">
-                      <Col>
-                        <img
-                          className={"w-50 justify-content-start d-flex"}
-                          variant="top"
-                          style={{ height: "10vh" }}
-                          src={
-                            globalData.globeData.currentProject.company
-                              .clientIcon
-                          }
-                          alt="card-img"
-                        />
-                      </Col>
-                      <Col className=" align-self-center ">
-                        <Card.Title className="text-dark justify-content-end d-flex">
-                          {globalData.globeData.currentProject.company.role}
-                        </Card.Title>
-                      </Col>
-                    </Row>
-                    <p className="border border-top-1 border-secondary"></p>
-                    <Card.Text
-                      className={"text-dark"}
-                      style={{
-                        textAlign: "justify",
-                        fontFamily: "Roboto, sans-serif",
-                      }}
-                    >
-                      {globalData.globeData.currentProject.company.summary.map(
-                        (value, index) => (
+          <Col className={"col-12"}>
+            <h1 className="project-heading">
+              My Recent <strong className="purple">Works In Altimetrik </strong>
+            </h1>
+            <p className="text-success">
+              Here are a few projects I've worked on recently.
+            </p>
+          </Col>
+          <Row className="align-items-center flex-column flex-md-row">
+            {globalData.globeData.currentProject.company?.flatMap((project) => (
+              <Col
+                className={"w-100"}
+                style={{
+                  justifyContent: "center",
+                  alignSelf: "stretch",
+                  paddingBottom: "10px",
+                }}
+              >
+                <Col md={12} className="shadow-sm border-0">
+                  <Card className="">
+                    <Card.Body>
+                      <Row className="">
+                        <Col>
+                          <img
+                            className={"w-50 justify-content-start d-flex"}
+                            variant="top"
+                            style={{ height: "10vh" }}
+                            src={project?.clientIcon}
+                            alt=""
+                          />
+                        </Col>
+                        <Col className=" align-self-center ">
+                          <Card.Title className="text-dark justify-content-end d-flex">
+                            {project?.role}
+                          </Card.Title>
+                        </Col>
+                      </Row>
+                      <p className="border border-top-1 border-secondary"></p>
+                      <Card.Text
+                        className={"text-dark"}
+                        style={{
+                          textAlign: "justify",
+                          fontFamily: "Roboto, sans-serif",
+                        }}
+                      >
+                        {project?.summary.map((value, index) => (
                           <ul
                             key={index}
                             className="justify-content-between flex-row d-flex"
@@ -140,15 +162,23 @@ function Home() {
                               {value}
                             </li>
                           </ul>
-                        )
-                      )}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
+                        ))}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
               </Col>
-            </Col>
+            ))}
           </Row>{" "}
-          <Row className="align-items-center flex-column-reverse flex-md-row mt-5">
+          <Col className="position-relative">
+            <h1
+              className="text-danger position-relative my-4"
+              style={{ fontSize: "2.6em" }}
+            >
+              Freelance <strong className="purple">Works </strong>
+            </h1>
+          </Col>
+          <Row className="align-items-center flex-column-reverse mt-5">
             <Col
               className={"col-12 col-md-6"}
               style={{ justifyContent: "center", paddingBottom: "10px" }}
@@ -198,14 +228,6 @@ function Home() {
                   </Card.Body>
                 </Card>
               </Col>
-            </Col>
-            <Col className="position-relative">
-              <h1
-                className="text-danger position-relative my-4"
-                style={{ fontSize: "2.6em" }}
-              >
-                Freelance <strong className="purple">Works </strong>
-              </h1>
             </Col>
           </Row>
           <Row

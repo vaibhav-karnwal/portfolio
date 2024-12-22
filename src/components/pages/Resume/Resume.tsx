@@ -20,16 +20,22 @@ const Resume: FC = () => {
           <Col md={6} className="resume-left">
             <h3 className="resume-title">Experience</h3>
             <ResumeSection
-              title="Associate Software Engineer [ Altimetrik ]"
+              title="Software Engineer [ Altimetrik ]"
               date="Jan 2022 - present"
+              projectName="Putnam Investment"
               content={[
-                "Spearheaded the development of frontend and backend services for investment clients at Putnam Investments, leveraging React and NodeJS technologies.",
-                "We have developed a new web experience for Putnam ShareHolders with easier Navigation ,Interactive Charts , Enhanced investment performance Data and many more Features.",
-                "Identified web-based user interactions and developed highly-responsive user interface components via React concepts.",
-                "Worked in using React JS components, Forms, Events, Keys, Router, React Hooks, Redux concept.",
-                "It is a web application in which we worked onTechnologies like: React JS, Node, Redux ,Bootstrap, CSS, Scss, Json.",
-                "Translated designs & wireframes into high-quality code and wrote application interface code via JavaScript following React.js workflows.",
-                "Worked in implementing GraphQL and Rest API in Node project.",
+                "Created an optimized responsive UI from scratch, enhancing performance and user experience [JavaScript (ES6+), React.js, and Redux].",
+                "Integrated RESTful APIs with backend teams to ensure seamless data flow and functionality [JavaScript, TypeScript].",
+                "Improved app performance and increment of 23% in code coverage through code optimization, reducing load times and boosting resource efficiency.",
+                "Conducted comprehensive testing, utilizing sonarQube for 100% code Quality, ensuring reliability, and actively participated in Agile teams and code reviews [Jest and React Testing Library].",
+              ]}
+            />
+            <ResumeSection
+              projectName="Talent Central Dashboard"
+              content={[
+                "Spearheaded the enhancement and maintenance of the Talent Central Platform, delivering a dynamic and responsive UI with efficient state management [Redux, ReactJS, and AntD].",
+                "Developed clean, efficient, and reusable code, integrating front-end components with backend services through REST APIs [JavaScript, TypeScript].",
+                "Collaborated with cross-functional teams to deliver high-quality software solutions, driving improvements in employee management, talent pool tracking, and job proposal functionalities.",
               ]}
             />
             <ResumeSection

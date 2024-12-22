@@ -9,7 +9,7 @@ export interface GlobeDataDto {
   tools: string[];
   social: socialMedia[];
   currentProject: {
-    company: projectDetail;
+    company: projectDetail[];
     freelance: projectDetail;
   };
   offerings: offeringsDto[];
