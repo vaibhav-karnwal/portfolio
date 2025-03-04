@@ -41,9 +41,9 @@ const About: FC = () => {
                     ))}
                   </div>
                   <ul>
-                    <li className="about-activity">Helping Animals</li>
+                    <li className="about-activity">- Helping Animals</li>
                     <li className="about-activity">
-                      Watching Korean and Chinese Dramas
+                      - Watching Korean and Chinese Dramas
                     </li>
                   </ul>
 

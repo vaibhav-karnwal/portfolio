@@ -89,7 +89,7 @@ const NavBar: FC = () => {
 
             <Nav.Item>
               <Nav.Link
-                className="align-items-center d-flex text-shadow-dark"
+                className="align-items-center justify-content-center d-flex text-shadow-dark"
                 as={Link}
                 to="tel:9997243157"
                 onClick={() => updateExpanded(false)}

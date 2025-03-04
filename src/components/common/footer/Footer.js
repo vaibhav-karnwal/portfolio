@@ -35,17 +35,6 @@ function Footer() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/algocreater"
-                  style={{ color: "white" }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <img src={twitter} className="icon-size " alt="social"></img>
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
                   href="https://www.linkedin.com/in/vaibhav-karnwal/"
                   style={{ color: "white" }}
                   target="_blank"

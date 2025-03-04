@@ -4,9 +4,11 @@ import qrCode from "../../../Assets/qrCode.jpg";
 import { useSelector } from "react-redux";
 import { selectGlobeData } from "../../../state/selectors/selectGlobeData";
 import TypeWriterAnimation from "../../common/animation/TypeWriterAnimation";
+import { selectScreenSize } from "../../../state/selectors/selectScreenSize";
 
 function Home() {
   const globalData = useSelector(selectGlobeData);
+  const screenSize = useSelector(selectScreenSize);
 
   return (
     <section>
@@ -19,12 +21,12 @@ function Home() {
         <Container className="text-start text-white pt-5">
           <Row>
             <Col md={7} className="py-5 w-100">
-              <h1 style={{}} className="pb-4 heading pt-5 lightGreen">
+              <h2 style={{}} className="pb-4 heading pt-5 lightGreen">
                 Hey there!, I'm
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
-              </h1>
+              </h2>
               <h1 className="heading-name">
                 <strong className="main-name">
                   {globalData.globeData.name}
@@ -35,14 +37,14 @@ function Home() {
                 className="heading-name secondary d-flex row w-100"
                 style={{ fontSize: "2rem" }}
               >
-                <span className="w-75">
+                <span className={`${screenSize.isMobile ? "w-100" : "w-75"}`}>
                   <span className="text-white">
                     {globalData.globeData.profession} -
                   </span>
                   {globalData.globeData.nameDescription}
                 </span>
               </h1>
-              <Row className="heading-name" style={{ fontSize: "2rem" }}>
+              <Row className="status-name">
                 <Col
                   className="text-white"
                   style={{
@@ -51,7 +53,7 @@ function Home() {
                     maxWidth: "max-content",
                   }}
                 >
-                  {"3 year Experience"}
+                  {"3 year Exp"}
                 </Col>
                 <Col
                   className="text-white"
@@ -98,7 +100,7 @@ function Home() {
                   </Col>
                 </ul>
               </Col>
-              <div className="heading-profile text-align-start py-md-5 py-sm-4 pb-0">
+              <div className="heading-profile status-name text-align-start py-md-5 py-sm-4 pb-0">
                 <TypeWriterAnimation />
               </div>
             </Col>
@@ -126,13 +128,15 @@ function Home() {
                   paddingBottom: "10px",
                 }}
               >
-                <Col md={12} className="shadow-sm border-0">
-                  <Card className="">
+                <Col md={12} className="shadow-sm border-0 h-100">
+                  <Card className="" style={{ height: "100%" }}>
                     <Card.Body>
                       <Row className="">
                         <Col>
                           <img
-                            className={"w-50 justify-content-start d-flex"}
+                            className={`${
+                              screenSize.isMobile ? "w-100" : "w-50"
+                            } justify-content-start d-flex`}
                             variant="top"
                             style={{ height: "10vh" }}
                             src={project?.clientIcon}

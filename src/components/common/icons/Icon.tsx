@@ -1,18 +1,15 @@
 import { CSSProperties } from "react";
-import { RiReactjsFill } from "react-icons/ri";
-import { RiFlutterFill } from "react-icons/ri";
-import { FaJava, FaPhone } from "react-icons/fa";
-import { DiJavascript1 } from "react-icons/di";
-import { AiFillHtml5 } from "react-icons/ai";
-import { FaCss3 } from "react-icons/fa";
-import { DiBootstrap } from "react-icons/di";
-import { FaSass } from "react-icons/fa";
-import { AiFillGithub } from "react-icons/ai";
-import { DiAndroid } from "react-icons/di";
-import { SiVisualstudiocode } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { TbBrandRedux } from "react-icons/tb";
-import { SiJest, SiTypescript } from "react-icons/si";
+import { RiReactjsFill, RiFlutterFill } from "react-icons/ri";
+import { FaJava, FaPhone, FaCss3, FaSass, FaNodeJs } from "react-icons/fa";
+import { AiFillHtml5, AiFillGithub, AiTwotoneHome } from "react-icons/ai";
+import { DiBootstrap, DiAndroid, DiJavascript1 } from "react-icons/di";
+import {
+  SiAngular,
+  SiVisualstudiocode,
+  SiJest,
+  SiTypescript,
+} from "react-icons/si";
+import { TbBrandRedux, TbDropletFilled } from "react-icons/tb";
 import {
   MdAddCircleOutline,
   MdEmail,
@@ -20,9 +17,7 @@ import {
   MdOutlineLocationOn,
 } from "react-icons/md";
 import { CiCalendar } from "react-icons/ci";
-import { TbDropletFilled } from "react-icons/tb";
 import { HiShoppingCart } from "react-icons/hi";
-import { AiTwotoneHome } from "react-icons/ai";
 import { HiMapPin } from "react-icons/hi2";
 import { BsFillPersonFill } from "react-icons/bs";
 
@@ -245,6 +240,16 @@ const Icon = ({
     case "addRoundButton": {
       return (
         <MdAddCircleOutline
+          fill={fill}
+          className={className}
+          onClick={() => {onClick && onClick()}}
+          style={style}
+        />
+      );
+    }
+    case "angular": {
+      return (
+        <SiAngular
           fill={fill}
           className={className}
           onClick={() => onClick && onClick()}

@@ -27,6 +27,7 @@ const initialState: globeDataState = {
       "redux",
       "typescript",
       "jest",
+      "angular",
       "java",
       "javascript",
       "html",
@@ -43,11 +44,6 @@ const initialState: globeDataState = {
         href: "https://github.com/vaibhav-karnwal",
         src: Github,
         title: "Github",
-      },
-      {
-        href: "https://twitter.com/algocreater",
-        src: twitter,
-        title: "Twitter",
       },
       {
         href: "https://www.linkedin.com/in/vaibhav-karnwal/",

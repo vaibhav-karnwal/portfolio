@@ -6,9 +6,10 @@ html {
   );
   --project-section-background-color: linear-gradient(
     to bottom left,
-    rgba(18, 8, 24, 0.904),
-    rgba(91, 203, 188, 0.582)
+    rgb(154 82 82 / 90%),
+    rgb(0 238 255 / 78%)
   );
+
   --resume-section-background-color: linear-gradient(
     to bottom left,
     rgba(98, 203, 91, 0.582),
@@ -189,7 +190,7 @@ html {
   width: 50px;
   height: 50px;
   border: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-size: 30px;
   line-height: 70px;
@@ -316,6 +317,9 @@ html {
 @media (max-width: 767px) {
   .logo {
     font-size: 18px !important;
+  }
+  .status-name {
+    padding-left: 15px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -445,8 +449,15 @@ html {
 }
 
 .heading-name {
-  font-size: 2.5em !important;
+  font-size: 2em !important;
   padding-left: 45px !important;
+}
+.status-name {
+  font-size: 1.2em !important;
+  padding-left: 60px !important;
+  @media (max-width: 767px) {
+    padding-left: 15px !important;
+  }
 }
 
 .heading-profile {
@@ -455,13 +466,13 @@ html {
 
 .main-name {
   color: rgb(255, 255, 255);
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 700px;
   font-family: var(--font-family) !important;
 }
 
 .Typewriter__wrapper {
-  font-size: 3.2em !important;
+  font-size: 2em !important;
   color: rgb(255, 255, 255) !important;
   font-weight: 600 !important;
   text-shadow: 1px 1px 2px crimson;
@@ -500,14 +511,18 @@ html {
     padding-left: 5px !important;
   }
   .heading-name {
-    font-size: 1.8em !important;
+    font-size: 1em !important;
     padding-left: 5px !important;
+  }
+  .status-name {
+    font-size: 1.2em !important;
+    padding-left: 15px !important;
   }
   .heading-profile {
     padding-left: 5px !important;
   }
   .main-name {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .home-card {
     padding-top: 20px !important;
@@ -517,7 +532,7 @@ html {
     height: auto !important;
   }
   .Typewriter__wrapper {
-    font-size: 1.8em !important;
+    font-size: 1em !important;
     font-weight: 500 !important;
     position: absolute !important;
   }
@@ -731,7 +746,7 @@ html {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(255, 255, 255, 0.459) !important;
+  box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
