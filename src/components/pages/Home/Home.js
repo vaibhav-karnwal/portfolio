@@ -53,7 +53,7 @@ function Home() {
                     maxWidth: "max-content",
                   }}
                 >
-                  {"3 year Exp"}
+                  {"4+ year Exp"}
                 </Col>
                 <Col
                   className="text-white"
@@ -63,7 +63,7 @@ function Home() {
                     maxWidth: "max-content",
                   }}
                 >
-                  {"2 Month Notice Period"}
+                  {"1 Month Notice Period"}
                 </Col>
               </Row>
               <Col className="heading-profile pt-2">
@@ -174,7 +174,7 @@ function Home() {
               </Col>
             ))}
           </Row>{" "}
-          <Col className="position-relative">
+          {/* <Col className="position-relative">
             <h1
               className="text-danger position-relative my-4"
               style={{ fontSize: "2.6em" }}
@@ -233,7 +233,7 @@ function Home() {
                 </Card>
               </Col>
             </Col>
-          </Row>
+          </Row> */}
           <Row
             className={"py-5 d-flex offering"}
             style={{ justifyContent: "center", paddingBottom: "50px" }}

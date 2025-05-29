@@ -39,13 +39,14 @@ const Resume: FC = () => {
               ]}
             />
             <ResumeSection
-              title="Flutter Developer Intern [ Ranavaj Power Solution ]"
-              date="Apr 2021 - July 2021"
+              title="Frontend Developer [ Ranavaj Power Solution ]"
+              date="Apr 2021 - Dec 2021"
               content={[
                 "Worked on the development of an EV Charging Flutter Application with Dart and Flutter",
                 "Designed the Raft EV Charging App and added the features to enhance the user experience and optimized designs for Ios and Android Both.",
                 "Develop and debug the hybrid application, Created the Database, Added the Verification, Validation of Data Function and permissions to the Application.",
                 "Integrated the Razorpay Payment Gateway, Rest Api and other useful plugins in it",
+                "Assisted in building an e-commerce web application using React.js, working collaboratively under mentorship to implement responsive UI components and streamline user flows.",
               ]}
             />
           </Col>

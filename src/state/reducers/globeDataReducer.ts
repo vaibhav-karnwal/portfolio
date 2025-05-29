@@ -5,7 +5,6 @@ import {
 } from "../actions/types/globeDataActionType";
 import Github from "../../Assets/github.png";
 import instagram from "../../Assets/instagram.png";
-import twitter from "../../Assets/twitter.png";
 import linkedin from "../../Assets/linkedin.png";
 
 export interface globeDataState {
